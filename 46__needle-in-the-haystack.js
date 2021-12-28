@@ -11,7 +11,13 @@ findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']) sh
 
 function findNeedle(haystack) {
     // your code here
-    const index = haystack.findIndex(item => item === "needle");
+
+    //Solution 1
+    // const index = haystack.findIndex(item => item === "needle");
+
+    //Solution 2
+    const index = haystack.indexOf("needle");
+
     return `found the needle at position ${index}`;
 }
 
